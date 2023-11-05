@@ -5,7 +5,7 @@ function buscarCep(){
     uf.value = "";
 
 
-    fetch(`http://viacep.com.br/ws/${cep.value}/json/`)
+    fetch(`https://viacep.com.br/ws/${cep.value}/json/`)
     .then(function (resposta){
         return resposta.json();
     })
